@@ -6,13 +6,13 @@
         </attribute>
         <userInfo/>
     </entity>
-    <entity name="Mensa" syncable="YES">
+    <entity name="Mensa" representedClassName="Mensa" syncable="YES">
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="menu" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Menu" syncable="YES"/>
     </entity>
-    <entity name="Menu" syncable="YES">
+    <entity name="Menu" representedClassName="Menu" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>

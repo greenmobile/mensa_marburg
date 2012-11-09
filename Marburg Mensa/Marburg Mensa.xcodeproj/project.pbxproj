@@ -28,6 +28,8 @@
 		CEA733EA164D253C006C079C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA733BD164D253C006C079C /* CoreData.framework */; };
 		CEA733F2164D253C006C079C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEA733F0164D253C006C079C /* InfoPlist.strings */; };
 		CEA733F5164D253C006C079C /* Marburg_MensaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA733F4164D253C006C079C /* Marburg_MensaTests.m */; };
+		CED4B8FD164D2BBF003A4910 /* Mensa.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B8FC164D2BBF003A4910 /* Mensa.m */; };
+		CED4B900164D2BCE003A4910 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B8FF164D2BCE003A4910 /* Menu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		CEA733F1164D253C006C079C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEA733F3164D253C006C079C /* Marburg_MensaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marburg_MensaTests.h; sourceTree = "<group>"; };
 		CEA733F4164D253C006C079C /* Marburg_MensaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Marburg_MensaTests.m; sourceTree = "<group>"; };
+		CED4B8FB164D2BBF003A4910 /* Mensa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mensa.h; path = coreData/Mensa.h; sourceTree = "<group>"; };
+		CED4B8FC164D2BBF003A4910 /* Mensa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mensa.m; path = coreData/Mensa.m; sourceTree = "<group>"; };
+		CED4B8FE164D2BCE003A4910 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = coreData/Menu.h; sourceTree = "<group>"; };
+		CED4B8FF164D2BCE003A4910 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Menu.m; path = coreData/Menu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,10 @@
 			isa = PBXGroup;
 			children = (
 				CEA733D1164D253C006C079C /* Marburg_Mensa.xcdatamodeld */,
+				CED4B8FB164D2BBF003A4910 /* Mensa.h */,
+				CED4B8FC164D2BBF003A4910 /* Mensa.m */,
+				CED4B8FE164D2BCE003A4910 /* Menu.h */,
+				CED4B8FF164D2BCE003A4910 /* Menu.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -309,6 +319,8 @@
 				CEA733D3164D253C006C079C /* Marburg_Mensa.xcdatamodeld in Sources */,
 				CEA733D6164D253C006C079C /* MasterViewController.m in Sources */,
 				CEA733D9164D253C006C079C /* DetailViewController.m in Sources */,
+				CED4B8FD164D2BBF003A4910 /* Mensa.m in Sources */,
+				CED4B900164D2BCE003A4910 /* Menu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
