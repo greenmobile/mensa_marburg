@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CoreData+MagicalRecord.h"
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
 
 @implementation AppDelegate
@@ -18,12 +17,17 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.sqlite"];
+
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+
     return YES;
 }
 
@@ -51,7 +55,8 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [MagicalRecord cleanUp];
+
 }
 
 /*

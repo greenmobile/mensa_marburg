@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "Mensa.h"
 
 @interface FirstViewController ()
 
@@ -28,12 +29,40 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self loadMensae];
+    [self printMensae];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - feedReader
+
+-(void)reedFeeds{
+    
+}
+
+#pragma mark - loading from CoreData
+
+-(void)loadMensae{
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    
+    Mensa *myMensa = [Mensa MR_createInContext:localContext];
+    myMensa.name = @"Mensa Erlenring";
+
+    Mensa *myMensa2 = [Mensa MR_createInContext:localContext];
+    myMensa2.name = @"Mensa Lahnberge";
+    
+    [localContext MR_save];
+}
+
+-(void)printMensae{
+    NSArray *Mensae = [Mensa MR_findAll];
+    NSLog(@"%@",Mensae);
 }
 
 @end
