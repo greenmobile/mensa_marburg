@@ -59,6 +59,7 @@
 		CED4BA15164D4215003A4910 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA13164D4215003A4910 /* Model.xcdatamodeld */; };
 		CED4BA19164D42F6003A4910 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA18164D42F6003A4910 /* Menu.m */; };
 		CED4BA1F164D4A08003A4910 /* Mensa.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA1E164D4A08003A4910 /* Mensa.m */; };
+		CED4BA2C164D5B12003A4910 /* FeedReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA2B164D5B12003A4910 /* FeedReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,8 @@
 		CED4BA18164D42F6003A4910 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Menu.m; path = CoreData/Menu.m; sourceTree = "<group>"; };
 		CED4BA1D164D4A08003A4910 /* Mensa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mensa.h; path = CoreData/Mensa.h; sourceTree = "<group>"; };
 		CED4BA1E164D4A08003A4910 /* Mensa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mensa.m; path = CoreData/Mensa.m; sourceTree = "<group>"; };
+		CED4BA2A164D5B12003A4910 /* FeedReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedReader.h; sourceTree = "<group>"; };
+		CED4BA2B164D5B12003A4910 /* FeedReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,7 @@
 		CED4B978164D347D003A4910 /* Mensa Marburg */ = {
 			isa = PBXGroup;
 			children = (
+				CED4BA28164D5AE0003A4910 /* FeedReader */,
 				CED4BA16164D421D003A4910 /* CoreData */,
 				CED4B981164D347D003A4910 /* AppDelegate.h */,
 				CED4B982164D347D003A4910 /* AppDelegate.m */,
@@ -387,6 +391,15 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		CED4BA28164D5AE0003A4910 /* FeedReader */ = {
+			isa = PBXGroup;
+			children = (
+				CED4BA2A164D5B12003A4910 /* FeedReader.h */,
+				CED4BA2B164D5B12003A4910 /* FeedReader.m */,
+			);
+			name = FeedReader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -535,6 +548,7 @@
 				CED4BA15164D4215003A4910 /* Model.xcdatamodeld in Sources */,
 				CED4BA19164D42F6003A4910 /* Menu.m in Sources */,
 				CED4BA1F164D4A08003A4910 /* Mensa.m in Sources */,
+				CED4BA2C164D5B12003A4910 /* FeedReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +731,7 @@
 				CED4B9B7164D347D003A4910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CED4B9B8164D347D003A4910 /* Build configuration list for PBXNativeTarget "Mensa MarburgTests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +740,7 @@
 				CED4B9BA164D347D003A4910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
