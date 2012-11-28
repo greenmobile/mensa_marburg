@@ -8,10 +8,34 @@
 
 #import "AppDelegate.h"
 #import "CoreData+MagicalRecord.h"
-#import "FirstViewController.h"
+#import "MenuViewController.h"
 #import "SecondViewController.h"
+#import "Mensa.h"
+#import "Menu.h"
+#import "TabBarController.h"
 
 @implementation AppDelegate
+
+- (void)initTestData{
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    
+    Mensa *myMensa = [Mensa MR_createInContext:localContext];
+    myMensa.name = @"Mensa Erlenring";
+    
+    Menu *myMenu = [Menu MR_createInContext:localContext];
+    myMenu.desc = @"lecker Truthahn";
+    
+    myMensa.menu = myMenu;
+    
+    Mensa *myMensa2 = [Mensa MR_createInContext:localContext];
+    myMensa2.name = @"Mensa Lahnberge";
+    
+    Mensa *myMensa3 = [Mensa MR_createInContext:localContext];
+    myMensa3.name = @"Mensa irgendwo";
+
+    
+    [localContext MR_save];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -20,10 +44,9 @@
     
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.sqlite"];
 
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    [self initTestData];
+    
+    self.tabBarController = [[TabBarController alloc] init];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     

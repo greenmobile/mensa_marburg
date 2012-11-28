@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C86BD91666AE0800027874 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C86BD81666AE0800027874 /* TabBarController.m */; };
+		04C86BDC1666AF3300027874 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C86BDB1666AF3300027874 /* MenuViewController.xib */; };
+		04C86BDE1666B05E00027874 /* Mensa_Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04C86BDD1666B05E00027874 /* Mensa_Strings.strings */; };
 		CED4B973164D347D003A4910 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B972164D347D003A4910 /* UIKit.framework */; };
 		CED4B975164D347D003A4910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B974164D347D003A4910 /* Foundation.framework */; };
 		CED4B977164D347D003A4910 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B976164D347D003A4910 /* CoreGraphics.framework */; };
@@ -16,13 +19,12 @@
 		CED4B985164D347D003A4910 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4B984164D347D003A4910 /* Default.png */; };
 		CED4B987164D347D003A4910 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4B986164D347D003A4910 /* Default@2x.png */; };
 		CED4B989164D347D003A4910 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4B988164D347D003A4910 /* Default-568h@2x.png */; };
-		CED4B98C164D347D003A4910 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B98B164D347D003A4910 /* FirstViewController.m */; };
+		CED4B98C164D347D003A4910 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B98B164D347D003A4910 /* MenuViewController.m */; };
 		CED4B98E164D347D003A4910 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4B98D164D347D003A4910 /* first.png */; };
 		CED4B990164D347D003A4910 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4B98F164D347D003A4910 /* first@2x.png */; };
 		CED4B993164D347D003A4910 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B992164D347D003A4910 /* SecondViewController.m */; };
 		CED4B995164D347D003A4910 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4B994164D347D003A4910 /* second.png */; };
 		CED4B997164D347D003A4910 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4B996164D347D003A4910 /* second@2x.png */; };
-		CED4B99A164D347D003A4910 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4B998164D347D003A4910 /* FirstViewController.xib */; };
 		CED4B99D164D347D003A4910 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4B99B164D347D003A4910 /* SecondViewController.xib */; };
 		CED4B9A5164D347D003A4910 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B9A4164D347D003A4910 /* SenTestingKit.framework */; };
 		CED4B9A6164D347D003A4910 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B972164D347D003A4910 /* UIKit.framework */; };
@@ -73,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C86BD71666AE0800027874 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		04C86BD81666AE0800027874 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		04C86BDB1666AF3300027874 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		04C86BDD1666B05E00027874 /* Mensa_Strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Mensa_Strings.strings; sourceTree = "<group>"; };
 		CED4B96E164D347D003A4910 /* Mensa Marburg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mensa Marburg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4B972164D347D003A4910 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CED4B974164D347D003A4910 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,15 +92,14 @@
 		CED4B984164D347D003A4910 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CED4B986164D347D003A4910 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CED4B988164D347D003A4910 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CED4B98A164D347D003A4910 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CED4B98B164D347D003A4910 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CED4B98A164D347D003A4910 /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		CED4B98B164D347D003A4910 /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CED4B98D164D347D003A4910 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		CED4B98F164D347D003A4910 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		CED4B991164D347D003A4910 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		CED4B992164D347D003A4910 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CED4B994164D347D003A4910 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		CED4B996164D347D003A4910 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		CED4B999164D347D003A4910 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		CED4B99C164D347D003A4910 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
 		CED4B9A3164D347D003A4910 /* Mensa MarburgTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mensa MarburgTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4B9A4164D347D003A4910 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -226,19 +231,21 @@
 		CED4B978164D347D003A4910 /* Mensa Marburg */ = {
 			isa = PBXGroup;
 			children = (
-				CED4BA28164D5AE0003A4910 /* FeedReader */,
 				CED4BA16164D421D003A4910 /* CoreData */,
+				CED4BA28164D5AE0003A4910 /* FeedReader */,
+				04C86BD71666AE0800027874 /* TabBarController.h */,
+				04C86BD81666AE0800027874 /* TabBarController.m */,
 				CED4B981164D347D003A4910 /* AppDelegate.h */,
 				CED4B982164D347D003A4910 /* AppDelegate.m */,
-				CED4B98A164D347D003A4910 /* FirstViewController.h */,
-				CED4B98B164D347D003A4910 /* FirstViewController.m */,
+				CED4B98A164D347D003A4910 /* MenuViewController.h */,
+				CED4B98B164D347D003A4910 /* MenuViewController.m */,
+				04C86BDB1666AF3300027874 /* MenuViewController.xib */,
 				CED4B98D164D347D003A4910 /* first.png */,
 				CED4B98F164D347D003A4910 /* first@2x.png */,
 				CED4B991164D347D003A4910 /* SecondViewController.h */,
 				CED4B992164D347D003A4910 /* SecondViewController.m */,
 				CED4B994164D347D003A4910 /* second.png */,
 				CED4B996164D347D003A4910 /* second@2x.png */,
-				CED4B998164D347D003A4910 /* FirstViewController.xib */,
 				CED4B99B164D347D003A4910 /* SecondViewController.xib */,
 				CED4B979164D347D003A4910 /* Supporting Files */,
 			);
@@ -255,6 +262,7 @@
 				CED4B984164D347D003A4910 /* Default.png */,
 				CED4B986164D347D003A4910 /* Default@2x.png */,
 				CED4B988164D347D003A4910 /* Default-568h@2x.png */,
+				04C86BDD1666B05E00027874 /* Mensa_Strings.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -479,8 +487,9 @@
 				CED4B990164D347D003A4910 /* first@2x.png in Resources */,
 				CED4B995164D347D003A4910 /* second.png in Resources */,
 				CED4B997164D347D003A4910 /* second@2x.png in Resources */,
-				CED4B99A164D347D003A4910 /* FirstViewController.xib in Resources */,
 				CED4B99D164D347D003A4910 /* SecondViewController.xib in Resources */,
+				04C86BDC1666AF3300027874 /* MenuViewController.xib in Resources */,
+				04C86BDE1666B05E00027874 /* Mensa_Strings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +526,7 @@
 			files = (
 				CED4B97F164D347D003A4910 /* main.m in Sources */,
 				CED4B983164D347D003A4910 /* AppDelegate.m in Sources */,
-				CED4B98C164D347D003A4910 /* FirstViewController.m in Sources */,
+				CED4B98C164D347D003A4910 /* MenuViewController.m in Sources */,
 				CED4B993164D347D003A4910 /* SecondViewController.m in Sources */,
 				CED4B9F7164D3F8D003A4910 /* MagicalImportFunctions.m in Sources */,
 				CED4B9F8164D3F8D003A4910 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -549,6 +558,7 @@
 				CED4BA19164D42F6003A4910 /* Menu.m in Sources */,
 				CED4BA1F164D4A08003A4910 /* Mensa.m in Sources */,
 				CED4BA2C164D5B12003A4910 /* FeedReader.m in Sources */,
+				04C86BD91666AE0800027874 /* TabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,14 +587,6 @@
 				CED4B97C164D347D003A4910 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CED4B998164D347D003A4910 /* FirstViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CED4B999164D347D003A4910 /* en */,
-			);
-			name = FirstViewController.xib;
 			sourceTree = "<group>";
 		};
 		CED4B99B164D347D003A4910 /* SecondViewController.xib */ = {
@@ -659,10 +661,12 @@
 		CED4B9B6164D347D003A4910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mensa Marburg/Mensa Marburg-Prefix.pch";
 				INFOPLIST_FILE = "Mensa Marburg/Mensa Marburg-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mensa.h"
 
-@interface FirstViewController : UIViewController
+
+@interface MenuViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITableView *table;
+@property (strong, nonatomic)     Mensa *myMensa;
+
 
 @end
