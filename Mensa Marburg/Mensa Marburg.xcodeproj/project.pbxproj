@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047DC400169BA4AD00A89FF5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4BA11164D3FB3003A4910 /* CoreData.framework */; };
+		047EDB48169C5807003169A1 /* Mensa.m in Sources */ = {isa = PBXBuildFile; fileRef = 047EDB47169C5807003169A1 /* Mensa.m */; };
 		04C86BD91666AE0800027874 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C86BD81666AE0800027874 /* TabBarController.m */; };
 		04C86BDC1666AF3300027874 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C86BDB1666AF3300027874 /* MenuViewController.xib */; };
 		04C86BDE1666B05E00027874 /* Mensa_Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04C86BDD1666B05E00027874 /* Mensa_Strings.strings */; };
+		04ED5BE3168303E800C00B00 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED5BE2168303E800C00B00 /* Menu.m */; };
+		04FDCE8E169B4D6200F75453 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCE8C169B4D6200F75453 /* FeedViewController.m */; };
+		04FDCE8F169B4D6200F75453 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FDCE8D169B4D6200F75453 /* FeedViewController.xib */; };
 		CED4B973164D347D003A4910 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B972164D347D003A4910 /* UIKit.framework */; };
 		CED4B975164D347D003A4910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B974164D347D003A4910 /* Foundation.framework */; };
 		CED4B977164D347D003A4910 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B976164D347D003A4910 /* CoreGraphics.framework */; };
@@ -57,10 +62,7 @@
 		CED4BA0E164D3F8D003A4910 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B9F0164D3F8D003A4910 /* MagicalRecord+Setup.m */; };
 		CED4BA0F164D3F8D003A4910 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B9F2164D3F8D003A4910 /* MagicalRecord+ShorthandSupport.m */; };
 		CED4BA10164D3F8D003A4910 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4B9F4164D3F8D003A4910 /* MagicalRecord.m */; };
-		CED4BA12164D3FB3003A4910 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4BA11164D3FB3003A4910 /* CoreData.framework */; };
 		CED4BA15164D4215003A4910 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA13164D4215003A4910 /* Model.xcdatamodeld */; };
-		CED4BA19164D42F6003A4910 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA18164D42F6003A4910 /* Menu.m */; };
-		CED4BA1F164D4A08003A4910 /* Mensa.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA1E164D4A08003A4910 /* Mensa.m */; };
 		CED4BA2C164D5B12003A4910 /* FeedReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4BA2B164D5B12003A4910 /* FeedReader.m */; };
 /* End PBXBuildFile section */
 
@@ -75,10 +77,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047EDB46169C5807003169A1 /* Mensa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mensa.h; sourceTree = "<group>"; };
+		047EDB47169C5807003169A1 /* Mensa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mensa.m; sourceTree = "<group>"; };
 		04C86BD71666AE0800027874 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		04C86BD81666AE0800027874 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		04C86BDB1666AF3300027874 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		04C86BDD1666B05E00027874 /* Mensa_Strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Mensa_Strings.strings; sourceTree = "<group>"; };
+		04ED5BE1168303E800C00B00 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = CoreData/Menu.h; sourceTree = "<group>"; };
+		04ED5BE2168303E800C00B00 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Menu.m; path = CoreData/Menu.m; sourceTree = "<group>"; };
+		04FDCE8B169B4D6200F75453 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		04FDCE8C169B4D6200F75453 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		04FDCE8D169B4D6200F75453 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		CED4B96E164D347D003A4910 /* Mensa Marburg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mensa Marburg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4B972164D347D003A4910 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CED4B974164D347D003A4910 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,8 +96,8 @@
 		CED4B97C164D347D003A4910 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CED4B97E164D347D003A4910 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CED4B980164D347D003A4910 /* Mensa Marburg-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mensa Marburg-Prefix.pch"; sourceTree = "<group>"; };
-		CED4B981164D347D003A4910 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CED4B982164D347D003A4910 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CED4B981164D347D003A4910 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Mensa Marburg/AppDelegate.h"; sourceTree = "<group>"; };
+		CED4B982164D347D003A4910 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Mensa Marburg/AppDelegate.m"; sourceTree = "<group>"; };
 		CED4B984164D347D003A4910 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CED4B986164D347D003A4910 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CED4B988164D347D003A4910 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -163,10 +172,6 @@
 		CED4B9F6164D3F8D003A4910 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		CED4BA11164D3FB3003A4910 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CED4BA14164D4215003A4910 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		CED4BA17164D42F6003A4910 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = CoreData/Menu.h; sourceTree = "<group>"; };
-		CED4BA18164D42F6003A4910 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Menu.m; path = CoreData/Menu.m; sourceTree = "<group>"; };
-		CED4BA1D164D4A08003A4910 /* Mensa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mensa.h; path = CoreData/Mensa.h; sourceTree = "<group>"; };
-		CED4BA1E164D4A08003A4910 /* Mensa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mensa.m; path = CoreData/Mensa.m; sourceTree = "<group>"; };
 		CED4BA2A164D5B12003A4910 /* FeedReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedReader.h; sourceTree = "<group>"; };
 		CED4BA2B164D5B12003A4910 /* FeedReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,7 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED4BA12164D3FB3003A4910 /* CoreData.framework in Frameworks */,
+				047DC400169BA4AD00A89FF5 /* CoreData.framework in Frameworks */,
 				CED4B973164D347D003A4910 /* UIKit.framework in Frameworks */,
 				CED4B975164D347D003A4910 /* Foundation.framework in Frameworks */,
 				CED4B977164D347D003A4910 /* CoreGraphics.framework in Frameworks */,
@@ -199,6 +204,8 @@
 		CED4B963164D347C003A4910 = {
 			isa = PBXGroup;
 			children = (
+				CED4B981164D347D003A4910 /* AppDelegate.h */,
+				CED4B982164D347D003A4910 /* AppDelegate.m */,
 				CED4B9BB164D3F8D003A4910 /* MagicalRecord */,
 				CED4B978164D347D003A4910 /* Mensa Marburg */,
 				CED4B9AA164D347D003A4910 /* Mensa MarburgTests */,
@@ -235,8 +242,6 @@
 				CED4BA28164D5AE0003A4910 /* FeedReader */,
 				04C86BD71666AE0800027874 /* TabBarController.h */,
 				04C86BD81666AE0800027874 /* TabBarController.m */,
-				CED4B981164D347D003A4910 /* AppDelegate.h */,
-				CED4B982164D347D003A4910 /* AppDelegate.m */,
 				CED4B98A164D347D003A4910 /* MenuViewController.h */,
 				CED4B98B164D347D003A4910 /* MenuViewController.m */,
 				04C86BDB1666AF3300027874 /* MenuViewController.xib */,
@@ -390,11 +395,11 @@
 		CED4BA16164D421D003A4910 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				CED4BA17164D42F6003A4910 /* Menu.h */,
-				CED4BA18164D42F6003A4910 /* Menu.m */,
 				CED4BA13164D4215003A4910 /* Model.xcdatamodeld */,
-				CED4BA1D164D4A08003A4910 /* Mensa.h */,
-				CED4BA1E164D4A08003A4910 /* Mensa.m */,
+				047EDB46169C5807003169A1 /* Mensa.h */,
+				047EDB47169C5807003169A1 /* Mensa.m */,
+				04ED5BE1168303E800C00B00 /* Menu.h */,
+				04ED5BE2168303E800C00B00 /* Menu.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -404,6 +409,9 @@
 			children = (
 				CED4BA2A164D5B12003A4910 /* FeedReader.h */,
 				CED4BA2B164D5B12003A4910 /* FeedReader.m */,
+				04FDCE8B169B4D6200F75453 /* FeedViewController.h */,
+				04FDCE8C169B4D6200F75453 /* FeedViewController.m */,
+				04FDCE8D169B4D6200F75453 /* FeedViewController.xib */,
 			);
 			name = FeedReader;
 			sourceTree = "<group>";
@@ -490,6 +498,7 @@
 				CED4B99D164D347D003A4910 /* SecondViewController.xib in Resources */,
 				04C86BDC1666AF3300027874 /* MenuViewController.xib in Resources */,
 				04C86BDE1666B05E00027874 /* Mensa_Strings.strings in Resources */,
+				04FDCE8F169B4D6200F75453 /* FeedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,10 +564,11 @@
 				CED4BA0F164D3F8D003A4910 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				CED4BA10164D3F8D003A4910 /* MagicalRecord.m in Sources */,
 				CED4BA15164D4215003A4910 /* Model.xcdatamodeld in Sources */,
-				CED4BA19164D42F6003A4910 /* Menu.m in Sources */,
-				CED4BA1F164D4A08003A4910 /* Mensa.m in Sources */,
 				CED4BA2C164D5B12003A4910 /* FeedReader.m in Sources */,
 				04C86BD91666AE0800027874 /* TabBarController.m in Sources */,
+				04ED5BE3168303E800C00B00 /* Menu.m in Sources */,
+				04FDCE8E169B4D6200F75453 /* FeedViewController.m in Sources */,
+				047EDB48169C5807003169A1 /* Mensa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,12 +671,13 @@
 		CED4B9B6164D347D003A4910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mensa Marburg/Mensa Marburg-Prefix.pch";
 				INFOPLIST_FILE = "Mensa Marburg/Mensa Marburg-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -674,10 +685,12 @@
 		CED4B9B7164D347D003A4910 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mensa Marburg/Mensa Marburg-Prefix.pch";
 				INFOPLIST_FILE = "Mensa Marburg/Mensa Marburg-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

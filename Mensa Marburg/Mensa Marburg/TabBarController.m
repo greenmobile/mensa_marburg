@@ -37,10 +37,14 @@
         //init ViewController
     NSMutableArray *mutableViewController = [[NSMutableArray alloc] init];
     for (Mensa *myMensa in myMensae) {
-        MenuViewController *mvc = [[MenuViewController alloc] init];
-        mvc.myMensa = myMensa;
-        [mutableViewController addObject:mvc];
+        
+
+        MenuViewController *mvc = [[MenuViewController alloc] initWithMensa:myMensa];
+        
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mvc];
+        [mutableViewController addObject:navController];
     }
+    
     myMensae = mutableViewController;
         //add ViewController to TabBar
     self.viewControllers = myMensae;

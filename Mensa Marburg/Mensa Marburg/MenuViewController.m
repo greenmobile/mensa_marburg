@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "Mensa.h"
 #import "Menu.h"
+#import "FeedReader.h"
 
 @interface MenuViewController (){
     NSArray *menus;
@@ -27,15 +28,33 @@
     }
     return self;
 }
+
+- (id)initWithMensa:(Mensa *)myMensa
+{
+    self = [super init];
+    if (self) {
+        self.myMensa = myMensa;
+        self.title = myMensa.name;
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+    }
+    return self;
+}
 							
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    //initializing the navigation bar
+    self.navigationController.navigationBar.hidden = false;
     
-    menus = [Menu MR_findAllWithPredicate:[NSPredicate predicateWithFormat:@"Mensa.name == %@",_myMensa.name]];
+    //adding a reloadButton
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reload)]  ;
     
-    NSLog(@"menuArray: %@", menus);
+   
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    //Do a reload:
+    [self reload];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +62,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)reload{
+    
+    //read feads
+    FeedReader *rssParser = [[FeedReader alloc] init];
+    [rssParser parseRssFeedForMensa:_myMensa withDelegate:self];
+    
+    //
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    //DURCHBRUCH :)
+    menus = [_myMensa.menu allObjects];
+    
+    //menus = [Menu MR_findAllInContext:localContext];
+    if ([menus count]>0) {
+        Menu *truthahn = [menus objectAtIndex:0];
+        NSSet *mensa = truthahn.mensa;
+        NSLog(@"menuMensa: %@", [mensa anyObject]);
+
+    }
+   }
 
 #pragma mark - feedReader
 
@@ -64,11 +103,18 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
     Menu *menu = [menus objectAtIndex:indexPath.row];
     cell.textLabel.text = menu.desc;
+    cell.detailTextLabel.text = menu.name;
     return cell;
+}
+
+#pragma mark - FeedReader methods
+
+- (void)receivedItems:(NSArray *)theItems {
+    [[self table] reloadData];
 }
 
 @end

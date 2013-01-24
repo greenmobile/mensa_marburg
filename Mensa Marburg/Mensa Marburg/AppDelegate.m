@@ -13,41 +13,58 @@
 #import "Mensa.h"
 #import "Menu.h"
 #import "TabBarController.h"
+#import "FeedViewController.h"
 
 @implementation AppDelegate
 
 - (void)initTestData{
     NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
     
+    [Mensa MR_truncateAll];
+    [Menu MR_truncateAll];
+    
     Mensa *myMensa = [Mensa MR_createInContext:localContext];
     myMensa.name = @"Mensa Erlenring";
+    myMensa.rssString = @"http://www.studentenwerk-marburg.de/?id=414";
+    myMensa.id = [NSNumber numberWithInt:1];
     
-    Menu *myMenu = [Menu MR_createInContext:localContext];
-    myMenu.desc = @"lecker Truthahn";
+//    Menu *myMenu = [Menu MR_createInContext:localContext];
+//    myMenu.desc = @"lecker Truthahn";
     
-    myMensa.menu = myMenu;
+   // NSSet *menus = [[NSSet alloc] initWithObjects:myMenu, nil];
+    //myMensa.menu = menus;
     
     Mensa *myMensa2 = [Mensa MR_createInContext:localContext];
+    myMensa2.rssString = @"http://www.studentenwerk-marburg.de/navimeta/rss-feeds/rssfeedspeiseplanmensalahnberge.html";
     myMensa2.name = @"Mensa Lahnberge";
     
     Mensa *myMensa3 = [Mensa MR_createInContext:localContext];
-    myMensa3.name = @"Mensa irgendwo";
+    myMensa3.name = @"Bistro";
+    myMensa3.rssString = @"http://www.studentenwerk-marburg.de/navimeta/rss-feeds/rssfeedspeiseplanbistro.html";
 
+    [localContext MR_saveInBackgroundErrorHandler:^(NSError *error) {
+    } completion:^{
+        
+    }];
     
-    [localContext MR_save];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.sqlite"];
 
     [self initTestData];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    
     
     self.tabBarController = [[TabBarController alloc] init];
     self.window.rootViewController = self.tabBarController;
+    
+    //FeedViewController *fvc = [[FeedViewController alloc] init];
+    //self.window.rootViewController = fvc;
+    
     [self.window makeKeyAndVisible];
     
 

@@ -15,5 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *table;
 @property (strong, nonatomic)     Mensa *myMensa;
 
+- (id)initWithMensa:(Mensa *)myMensa;
+
+
 
 @end

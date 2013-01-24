@@ -2,8 +2,8 @@
 //  Mensa.h
 //  Mensa Marburg
 //
-//  Created by Tillmann on 20.12.12.
-//  Copyright (c) 2012 greenmobile Innovations. All rights reserved.
+//  Created by Tillmann on 08.01.13.
+//  Copyright (c) 2013 greenmobile Innovations. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSNumber * latitude;
 @property (nonatomic, retain) NSNumber * longitude;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * rssString;
 @property (nonatomic, retain) NSSet *menu;
 @end
 
